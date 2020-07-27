@@ -77,7 +77,6 @@ def add_capacity(road_pointer, master_list):
 
         # Find if the node has a parent. If yes, set road_pointer to point to this entry in the master list
         # and continue looping. If no, break.
-        reached = 0
         if node.parent is not None:
             p = master_list.master[node.parent]
             if p.capacity - p.flow > 0:
